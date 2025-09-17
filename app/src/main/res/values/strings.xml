@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">hide_and_seek</string>
+    <string name="welcome_message">Hi Akshaya</string>
+    <string name="text_change_btn">Change Text</string>
+    <string name="Motivation_message">You can do it! Kotiln developer</string>
 </resources>

@@ -1,6 +1,8 @@
 package com.example.hide_and_seek
 
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,4 +19,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    fun clicked(view: View) {
+        var textView: TextView = findViewById(R.id.textView)
+        textView.setText(R.string.Motivation_message);
+    }
+
+
 }
+
+
