@@ -41,30 +41,45 @@ class MainActivity : AppCompatActivity() {
         _counter_text.text = counter.toString()
     }
 
-    fun add(view: View){
-        var n1=findViewById<EditText?>(R.id.num1).text.toString().toInt()
-        var n2=findViewById<EditText?>(R.id.num2).text.toString().toInt()
-        var record:TextView=findViewById(R.id.result)
-        var result=n1 + n2
-        record.text="Result is $result"
+    fun add(view: View) {
+        var n1 = findViewById<EditText?>(R.id.num1).text.toString().toInt()
+        var n2 = findViewById<EditText?>(R.id.num2).text.toString().toInt()
+        var record: TextView = findViewById(R.id.result)
+        var result = n1 + n2
+        record.text = "Result is $result"
     }
-    fun sub(view:View){
-        var n1=findViewById<EditText?>(R.id.num1).text.toString().toInt()
-        var n2=findViewById<EditText?>(R.id.num2).text.toString().toInt()
-        var result=n1-n2
-        findViewById<TextView>(R.id.result).text="Result is $result"
+
+    fun sub(view: View) {
+        var n1 = findViewById<EditText?>(R.id.num1).text.toString().toInt()
+        var n2 = findViewById<EditText?>(R.id.num2).text.toString().toInt()
+        var result = n1 - n2
+        findViewById<TextView>(R.id.result).text = "Result is $result"
     }
-    fun mul(view:View){
-        var n1=findViewById<EditText?>(R.id.num1).text.toString().toInt()
-        var n2=findViewById<EditText?>(R.id.num2).text.toString().toInt()
-        var result=n1*n2
-        findViewById<TextView>(R.id.result).text="Result is $result"
+
+    fun mul(view: View) {
+        var n1 = findViewById<EditText?>(R.id.num1).text.toString().toInt()
+        var n2 = findViewById<EditText?>(R.id.num2).text.toString().toInt()
+        var result = n1 * n2
+        findViewById<TextView>(R.id.result).text = "Result is $result"
     }
-    fun div(view:View){
-        var n1=findViewById<EditText?>(R.id.num1).text.toString().toInt()
-        var n2=findViewById<EditText?>(R.id.num2).text.toString().toInt()
-        var result=n1/n2
-        findViewById<TextView>(R.id.result).text="Result is $result"
+
+    fun div(view: View) {
+        var n1 = findViewById<EditText?>(R.id.num1).text.toString().toInt()
+        var n2 = findViewById<EditText?>(R.id.num2).text.toString().toInt()
+        var result = n1 / n2
+        findViewById<TextView>(R.id.result).text = "Result is $result"
+    }
+
+    fun login(view: View) {
+        var username = findViewById<EditText?>(R.id.uername).text.toString()
+        var password = findViewById<EditText?>(R.id.password).text.toString()
+        var login_message: TextView = findViewById(R.id.login_message)
+        if (username == "admin" && password == "1234") {
+            login_message.text = "Login Successful ✅"
+        } else {
+            login_message.text = "Invalid credentials ❌"
+
+        }
     }
 
 
