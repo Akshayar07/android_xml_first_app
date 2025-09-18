@@ -25,11 +25,20 @@ class MainActivity : AppCompatActivity() {
         textView.setText(R.string.Motivation_message);
     }
 
-    var counter:Int=0;
+    var counter=0;
     fun increament(view: View){
      counter++;
         var counter_text:TextView=findViewById(R.id.counter_text)
         counter_text.text=counter.toString()
+    }
+
+    fun decreament(view: View){
+        if(counter>0){
+            counter--;
+        }
+        var _counter_text:TextView=findViewById(R.id.counter_text)
+        _counter_text.text=counter.toString()
+
     }
 
 
